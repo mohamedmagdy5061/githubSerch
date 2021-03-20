@@ -1,0 +1,37 @@
+.big-button {
+  background: $light-green;
+  color: $white;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid darken($color: $light-green, $amount: 10%);
+  font-size: $xl-size;
+  font-weight: 500;
+}
+
+.big-button:disabled {
+    opacity: .5;
+}
+
+.button {
+    background: $light-green;
+    color: $white;
+    border: none;
+    border-radius: 3px;
+    border-bottom: 1px solid darken($color: $light-green, $amount: 10%);
+    font-size: $m-size;
+    font-weight: 500;
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}
+
+.button--icon {
+    background-color: inherit;
+    border: none;   
+    padding: 0;
+    outline: none;
+}

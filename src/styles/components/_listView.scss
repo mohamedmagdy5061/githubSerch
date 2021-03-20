@@ -1,0 +1,46 @@
+.listView__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-gap: 2vw;
+  margin: 30px;
+  position: relative;
+}
+
+.listView__loading {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  right: 50%;
+}
+
+.listView__NoMore {
+  position: absolute;
+  bottom: -40px;
+  left: 45%;
+  right: 45%;
+  color: $card-color;
+}
+
+@media (max-width: 968px) {
+  .listView__wrapper {
+    display: grid;
+    grid-gap: 3vw;
+    grid-template-columns: repeat(3, minmax(245px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .listView__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-gap: 3vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .listView__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 230px);
+    grid-gap: 3vw;
+  }
+}

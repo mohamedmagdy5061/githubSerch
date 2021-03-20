@@ -1,0 +1,128 @@
+.profile {
+  color: '#3F424B';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 94vh;
+  justify-content: center;
+  border-radius: 5px;
+}
+.profile_wrapper {
+  max-width: 600px;
+}
+.profile_pic {
+  justify-content: center;
+  display: flex;
+  min-width: 280px;
+  margin-top: 20px;
+}
+
+.profile_pic img {
+  position: relative;
+  border-radius: 50%;
+  height: 280px;
+  width: 280px;
+
+  padding: 0;
+  margin: 0;
+  border: 3px solid brown;
+  transition: all 0.3s ease-out;
+}
+
+.profile_pic img:hover {
+  transform: scale(1.06, 1.06);
+}
+
+.profile_name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_name .name {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  opacity: 0.9;
+  margin: 10px 0px;
+}
+
+.profile_name .sub_name {
+  font-size: 18px;
+  margin-top: 0;
+  opacity: 0.9;
+  color: #545454;
+}
+
+.profile-bio {
+  color: #b9b9b9;
+  text-align: center;
+}
+
+.profile-Info {
+  width: 100%;
+  padding: 15px;
+}
+
+.profile-Info ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.profile-Info ul li a {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+.profile-Info ul li .icon {
+  margin-right: 10px;
+}
+
+.profile_counts {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.profile_counts .profile_counts_wrap {
+  padding: 20px;
+  width: 150px;
+}
+
+.profile_counts .profile_counts_wrap .item {
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: $card-color;
+  color: #e4e9ef;
+}
+
+.profile_counts .profile_counts_wrap .item:hover {
+  background: darken($color: $card-color, $amount: 1%);
+  color: #d6d605
+ 
+}
+
+.profile_counts .profile_counts_wrap .item .fas {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.profile_counts .profile_counts_wrap .item .title {
+  font-size: 14px;
+}
+
+.profile_counts .profile_counts_wrap .item .title .title__number {
+  color: #fb641f;
+  margin-right: 10px;
+}
+
+@media (max-width: 550px) {
+  .profile_pic img {
+    height: 180px;
+    width: 180px;
+  }
+}
