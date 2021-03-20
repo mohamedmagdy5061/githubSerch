@@ -22,7 +22,7 @@ const UserDetails: React.FC = ({ match }: any) => {
 
   useEffect(() => {
     getUserInfo();
-  }, []);
+  }, [id]);
 
   return (
     <div className="profile">

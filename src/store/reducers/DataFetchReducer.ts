@@ -39,7 +39,6 @@ export const DataFetchReducer = (
     case 'FETCH_FAILURE':
       return {
         ...state,
-        // data: [],
         isLoading: false,
         isError: action.payload
       };

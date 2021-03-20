@@ -8,7 +8,7 @@ import useScroll from '../hooks/useScroll';
 const HomePage: React.FC = () => {
   const dispatch = useDispatch();
   const scrollPosition = useScroll();
-  const { data = [], searchParams, isError } = useSelector(
+  const { data = [], searchParams } = useSelector(
     (state: RootStateOrAny) => state.fetchedData
   );
 
@@ -28,10 +28,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className={`${!data.length && 'homeView'}`}>
-      {/* <div 
-      className={`d`}> */}
         <SearchBox />
-      {/* </div> */}
       <ListView dataList={data} />
     </div>
   );
