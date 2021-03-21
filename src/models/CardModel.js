@@ -6,5 +6,6 @@ export class CardModel {
       get(data, 'owner.avatar_url') || get(data, 'avatar_url', '');
     this.login = get(data, 'owner.login') || get(data, 'login', '');
     this.owner = get(data, 'owner');
+    this.full_name = get(data, 'full_name', '')
   }
 }
