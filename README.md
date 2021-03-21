@@ -4,7 +4,7 @@ This project was generated with [React CLI](https://reactjs.org/docs/create-a-ne
 
 ---
 ## Public Url its deploy on firebase host 
-`https://githubsearch-24ba8.web.app/`
+[Live Demo](https://githubsearch-24ba8.web.app/) `https://githubsearch-24ba8.web.app/`
 
 #### How to Build  Application as Production
 
