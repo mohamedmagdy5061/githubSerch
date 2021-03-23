@@ -10,7 +10,7 @@ let axiosInstance = axios.create({
 const gitHubToken = '2112a29907940d0a6d926abb79b7dabc390e970c';
 axiosInstance.interceptors.request.use((config) => {
   config.headers['Content-Type'] = 'application/json';
-  config.headers['authorization'] = gitHubToken;
+  // config.headers['authorization'] = gitHubToken;
   return config;
 });
 
