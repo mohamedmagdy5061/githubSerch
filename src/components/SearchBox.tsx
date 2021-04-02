@@ -78,6 +78,9 @@ const SearchBox: React.FC = () => {
     if (debounceValue.length > 3) {
       fetchGitHubSearchResults(debounceValue);
     }
+    if(debounceValue && debounceValue !== searchParams.searchKeyWord){
+      dispatch({ type: 'RESET_FETCHIN' });
+     }
   }, [debounceValue]);
 
   useEffect(() => {
