@@ -1,6 +1,8 @@
 .container {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: $l-size;
-    display: grid
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
 }

@@ -8,21 +8,21 @@
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s linear 0s;
   min-height: 300px;
-  color: #fff;
+  color: $white;
   .button--link {
-    color: #fff;
+    color: $link-color;
   }
 }
 
 .card:hover {
   border: 1px solid black;
   & .button--link {
-    color: #fb641f;
+    color: $hover-link;
   }
 }
 
 .card__avatar {
-  color: #fff;
+  color: $white;
   width: 100%;
   height: 85%;
   overflow: hidden;

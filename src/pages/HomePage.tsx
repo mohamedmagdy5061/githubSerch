@@ -21,14 +21,14 @@ const HomePage: React.FC = () => {
       document.documentElement.scrollHeight,
       document.documentElement.offsetHeight
     );
-    if (window.innerHeight + scrollPosition === docHeight && searchKeyWord) {
+    if (((window.innerHeight + scrollPosition) == docHeight) && searchKeyWord) {
       dispatch(fechData(type, searchKeyWord, page + 1));
     }
   }, [scrollPosition]);
 
   return (
     <div className={`${!data.length && 'homeView'}`}>
-        <SearchBox />
+      <SearchBox />
       <ListView dataList={data} />
     </div>
   );

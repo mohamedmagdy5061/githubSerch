@@ -1,5 +1,7 @@
 .homeView{
-    transform: translateY(250px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     transition: all 0.5s ease-in-out;
   }
 

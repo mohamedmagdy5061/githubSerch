@@ -6,7 +6,7 @@ export default function useScroll() {
 
   function handleScroll() {
     const win: Window = window;
-    setScrollPosition(win.scrollY);
+    setScrollPosition(Math.ceil(win.scrollY));
   }
 
   useEffect(() => {
