@@ -1,11 +1,5 @@
 .profile {
   color: '#3F424B';
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 94vh;
-  justify-content: center;
-  border-radius: 5px;
 }
 .profile_wrapper {
   max-width: 600px;
@@ -63,6 +57,12 @@
 .profile-Info {
   width: 100%;
   padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+.profile-Info ul {
+  padding: 2px;
+  margin: 0px;
 }
 
 .profile-Info ul li {
@@ -72,7 +72,7 @@
 
 .profile-Info ul li a {
   text-decoration: none;
-  color: darkcyan;
+  color: #83aae2;
 }
 
 .profile-Info ul li .icon {
@@ -83,11 +83,12 @@
   display: flex;
   align-items: baseline;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .profile_counts .profile_counts_wrap {
-  padding: 20px;
-  width: 150px;
+  padding: 12px;
+  width: 160px;
 }
 
 .profile_counts .profile_counts_wrap .item {
@@ -124,5 +125,12 @@
   .profile_pic img {
     height: 180px;
     width: 180px;
+  }
+  .profile_counts .profile_counts_wrap {
+    padding: 5px;
+    width: 140px;
+  }
+  .profile_name .name {
+    font-size: 20px;
   }
 }
